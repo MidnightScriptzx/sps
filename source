@@ -1,0 +1,1061 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local WA = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Tools = Instance.new("TextLabel")
+local Equip = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Farm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TS = Instance.new("TextLabel")
+local Naming = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Wait = Instance.new("TextLabel")
+local WaitTimer = Instance.new("TextBox")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local StrengthInfo = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local PerSec = Instance.new("TextLabel")
+local PerMin = Instance.new("TextLabel")
+local PerHour = Instance.new("TextLabel")
+local PerDay = Instance.new("TextLabel")
+local SPS1 = Instance.new("TextLabel")
+local Earned = Instance.new("TextLabel")
+local SPS2 = Instance.new("TextLabel")
+local Earn = Instance.new("TextLabel")
+local SPS3 = Instance.new("TextLabel")
+local SPS4 = Instance.new("TextLabel")
+local Earn_2 = Instance.new("TextLabel")
+local Earn_3 = Instance.new("TextLabel")
+local PerSec_2 = Instance.new("TextLabel")
+local Gain = Instance.new("TextLabel")
+local Lag = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Anchor = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local unAnchor = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Camera = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Fps = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Clouds = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Fog = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Hud = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Inventory = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Rumble = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Chat = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Sps = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Dupe = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Open_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Main.BackgroundTransparency = 0.400
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0935046524, 0, 0.270614356, 0)
+Main.Size = UDim2.new(0, 260, 0, 303)
+
+UICorner.Parent = Main
+
+WA.Name = "WA"
+WA.Parent = Main
+WA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WA.BackgroundTransparency = 1.000
+WA.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WA.BorderSizePixel = 0
+WA.Position = UDim2.new(0.203323722, 0, 0, 0)
+WA.Size = UDim2.new(0, 151, 0, 40)
+WA.Font = Enum.Font.Fondamento
+WA.Text = "Weight Amount:"
+WA.TextColor3 = Color3.fromRGB(0, 0, 0)
+WA.TextScaled = true
+WA.TextSize = 14.000
+WA.TextWrapped = true
+
+UICorner_2.Parent = WA
+
+Tools.Name = "Tools"
+Tools.Parent = Main
+Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools.BackgroundTransparency = 1.000
+Tools.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tools.BorderSizePixel = 0
+Tools.Position = UDim2.new(0.0876417905, 0, 0.15810281, 0)
+Tools.Size = UDim2.new(0, 213, 0, 29)
+Tools.Font = Enum.Font.Fondamento
+Tools.Text = "0"
+Tools.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tools.TextSize = 42.000
+Tools.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Tools.TextStrokeTransparency = 0.000
+Tools.TextWrapped = true
+
+Equip.Name = "Equip"
+Equip.Parent = Main
+Equip.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Equip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Equip.BorderSizePixel = 0
+Equip.Position = UDim2.new(0.0451590121, 0, 0.586837292, 0)
+Equip.Size = UDim2.new(0, 108, 0, 32)
+Equip.Font = Enum.Font.Fondamento
+Equip.Text = "Equip"
+Equip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Equip.TextScaled = true
+Equip.TextSize = 14.000
+Equip.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Equip.TextStrokeTransparency = 0.000
+Equip.TextWrapped = true
+
+UICorner_3.Parent = Equip
+
+Farm.Name = "Farm"
+Farm.Parent = Main
+Farm.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(0.519414365, 0, 0.586837292, 0)
+Farm.Size = UDim2.new(0, 108, 0, 32)
+Farm.Font = Enum.Font.Fondamento
+Farm.Text = "Farm"
+Farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Farm.TextScaled = true
+Farm.TextSize = 14.000
+Farm.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Farm.TextStrokeTransparency = 0.000
+Farm.TextWrapped = true
+
+UICorner_4.Parent = Farm
+
+TS.Name = "TS"
+TS.Parent = Main
+TS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TS.BackgroundTransparency = 1.000
+TS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TS.BorderSizePixel = 0
+TS.Position = UDim2.new(0.0917403027, 0, 0.442244232, 0)
+TS.Size = UDim2.new(0, 212, 0, 35)
+TS.Font = Enum.Font.Fondamento
+TS.Text = "Str"
+TS.TextColor3 = Color3.fromRGB(0, 0, 0)
+TS.TextScaled = true
+TS.TextSize = 14.000
+TS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TS.TextStrokeTransparency = 0.000
+TS.TextWrapped = true
+
+Naming.Name = "Naming"
+Naming.Parent = Main
+Naming.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Naming.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Naming.BorderSizePixel = 0
+Naming.Position = UDim2.new(0.0532787628, 0, 0.310275644, 0)
+Naming.Size = UDim2.new(0, 239, 0, 33)
+Naming.Font = Enum.Font.SourceSans
+Naming.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+Naming.PlaceholderText = "Tool Name Here"
+Naming.Text = ""
+Naming.TextColor3 = Color3.fromRGB(0, 0, 0)
+Naming.TextScaled = true
+Naming.TextSize = 14.000
+Naming.TextStrokeColor3 = Color3.fromRGB(48, 68, 157)
+Naming.TextStrokeTransparency = 0.000
+Naming.TextWrapped = true
+
+UICorner_5.Parent = Naming
+
+Wait.Name = "Wait"
+Wait.Parent = Main
+Wait.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wait.BackgroundTransparency = 1.000
+Wait.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Wait.BorderSizePixel = 0
+Wait.Position = UDim2.new(0.0532787628, 0, 0.7227723, 0)
+Wait.Size = UDim2.new(0, 212, 0, 29)
+Wait.Font = Enum.Font.Fondamento
+Wait.Text = "Wait Time:"
+Wait.TextColor3 = Color3.fromRGB(0, 0, 0)
+Wait.TextScaled = true
+Wait.TextSize = 14.000
+Wait.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Wait.TextStrokeTransparency = 0.000
+Wait.TextWrapped = true
+
+WaitTimer.Name = "WaitTimer"
+WaitTimer.Parent = Main
+WaitTimer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaitTimer.BackgroundTransparency = 1.000
+WaitTimer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WaitTimer.BorderSizePixel = 0
+WaitTimer.Position = UDim2.new(0.0807692334, 0, 0.818481863, 0)
+WaitTimer.Size = UDim2.new(0, 200, 0, 50)
+WaitTimer.Font = Enum.Font.SourceSans
+WaitTimer.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+WaitTimer.Text = "0.6"
+WaitTimer.TextColor3 = Color3.fromRGB(0, 0, 0)
+WaitTimer.TextScaled = true
+WaitTimer.TextSize = 14.000
+WaitTimer.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.010
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Size = UDim2.new(0, 30, 0, 29)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextStrokeTransparency = 0.000
+Close.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = Main
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.010
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.868663371, 0, 0, 0)
+Open.Size = UDim2.new(0, 32, 0, 29)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "O"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextStrokeColor3 = Color3.fromRGB(255, 162, 0)
+Open.TextStrokeTransparency = 0.000
+Open.TextWrapped = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0451590903, 0, -0.138613865, 0)
+TextLabel.Size = UDim2.new(0, 213, 0, 34)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Inspired By 01NewJ"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+StrengthInfo.Name = "StrengthInfo"
+StrengthInfo.Parent = ScreenGui
+StrengthInfo.Active = true
+StrengthInfo.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+StrengthInfo.BackgroundTransparency = 0.400
+StrengthInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StrengthInfo.BorderSizePixel = 0
+StrengthInfo.Position = UDim2.new(0.580096424, 0, 0.589793324, 0)
+StrengthInfo.Size = UDim2.new(0, 475, 0, 223)
+StrengthInfo.Visible = false
+
+UICorner_6.Parent = StrengthInfo
+
+Title.Name = "Title"
+Title.Parent = StrengthInfo
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.315488786, 0, 0, 0)
+Title.Size = UDim2.new(0, 174, 0, 36)
+Title.Font = Enum.Font.FredokaOne
+Title.Text = "Strength Info"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+PerSec.Name = "PerSec"
+PerSec.Parent = StrengthInfo
+PerSec.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerSec.BackgroundTransparency = 1.000
+PerSec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PerSec.BorderSizePixel = 0
+PerSec.Position = UDim2.new(0.0418045856, 0, 0.436563134, 0)
+PerSec.Size = UDim2.new(0, 93, 0, 36)
+PerSec.Font = Enum.Font.FredokaOne
+PerSec.Text = "Per Second"
+PerSec.TextColor3 = Color3.fromRGB(85, 255, 0)
+PerSec.TextSize = 14.000
+
+PerMin.Name = "PerMin"
+PerMin.Parent = StrengthInfo
+PerMin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerMin.BackgroundTransparency = 1.000
+PerMin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PerMin.BorderSizePixel = 0
+PerMin.Position = UDim2.new(0.262857229, 0, 0.436563134, 0)
+PerMin.Size = UDim2.new(0, 93, 0, 36)
+PerMin.Font = Enum.Font.FredokaOne
+PerMin.Text = "Per Minute"
+PerMin.TextColor3 = Color3.fromRGB(85, 255, 0)
+PerMin.TextSize = 14.000
+
+PerHour.Name = "PerHour"
+PerHour.Parent = StrengthInfo
+PerHour.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerHour.BackgroundTransparency = 1.000
+PerHour.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PerHour.BorderSizePixel = 0
+PerHour.Position = UDim2.new(0.509172976, 0, 0.436563134, 0)
+PerHour.Size = UDim2.new(0, 93, 0, 36)
+PerHour.Font = Enum.Font.FredokaOne
+PerHour.Text = "Per Hour"
+PerHour.TextColor3 = Color3.fromRGB(85, 255, 0)
+PerHour.TextSize = 14.000
+
+PerDay.Name = "PerDay"
+PerDay.Parent = StrengthInfo
+PerDay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerDay.BackgroundTransparency = 1.000
+PerDay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PerDay.BorderSizePixel = 0
+PerDay.Position = UDim2.new(0.759699345, 0, 0.436563134, 0)
+PerDay.Size = UDim2.new(0, 93, 0, 36)
+PerDay.Font = Enum.Font.FredokaOne
+PerDay.Text = "Per Day"
+PerDay.TextColor3 = Color3.fromRGB(85, 255, 0)
+PerDay.TextSize = 14.000
+
+SPS1.Name = "SPS1"
+SPS1.Parent = StrengthInfo
+SPS1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPS1.BackgroundTransparency = 1.000
+SPS1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPS1.BorderSizePixel = 0
+SPS1.Position = UDim2.new(0.0418045856, 0, 0.602457762, 0)
+SPS1.Size = UDim2.new(0, 93, 0, 36)
+SPS1.Font = Enum.Font.FredokaOne
+SPS1.Text = "0"
+SPS1.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPS1.TextSize = 14.000
+
+Earned.Name = "Earned"
+Earned.Parent = StrengthInfo
+Earned.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Earned.BackgroundTransparency = 1.000
+Earned.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Earned.BorderSizePixel = 0
+Earned.Position = UDim2.new(0.0418045856, 0, 0.785892904, 0)
+Earned.Size = UDim2.new(0, 93, 0, 36)
+Earned.Font = Enum.Font.FredokaOne
+Earned.Text = "Earned >"
+Earned.TextColor3 = Color3.fromRGB(85, 255, 0)
+Earned.TextSize = 14.000
+
+SPS2.Name = "SPS2"
+SPS2.Parent = StrengthInfo
+SPS2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPS2.BackgroundTransparency = 1.000
+SPS2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPS2.BorderSizePixel = 0
+SPS2.Position = UDim2.new(0.262857229, 0, 0.602457762, 0)
+SPS2.Size = UDim2.new(0, 93, 0, 36)
+SPS2.Font = Enum.Font.FredokaOne
+SPS2.Text = "0"
+SPS2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPS2.TextSize = 14.000
+
+Earn.Name = "Earn"
+Earn.Parent = StrengthInfo
+Earn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Earn.BackgroundTransparency = 1.000
+Earn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Earn.BorderSizePixel = 0
+Earn.Position = UDim2.new(0.262857229, 0, 0.785892904, 0)
+Earn.Size = UDim2.new(0, 93, 0, 36)
+Earn.Font = Enum.Font.FredokaOne
+Earn.Text = "Coming"
+Earn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Earn.TextSize = 14.000
+
+SPS3.Name = "SPS3"
+SPS3.Parent = StrengthInfo
+SPS3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPS3.BackgroundTransparency = 1.000
+SPS3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPS3.BorderSizePixel = 0
+SPS3.Position = UDim2.new(0.509172976, 0, 0.602457762, 0)
+SPS3.Size = UDim2.new(0, 93, 0, 36)
+SPS3.Font = Enum.Font.FredokaOne
+SPS3.Text = "0"
+SPS3.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPS3.TextSize = 14.000
+
+SPS4.Name = "SPS4"
+SPS4.Parent = StrengthInfo
+SPS4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPS4.BackgroundTransparency = 1.000
+SPS4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPS4.BorderSizePixel = 0
+SPS4.Position = UDim2.new(0.759699345, 0, 0.602457762, 0)
+SPS4.Size = UDim2.new(0, 93, 0, 36)
+SPS4.Font = Enum.Font.FredokaOne
+SPS4.Text = "0"
+SPS4.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPS4.TextSize = 14.000
+
+Earn_2.Name = "Earn"
+Earn_2.Parent = StrengthInfo
+Earn_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Earn_2.BackgroundTransparency = 1.000
+Earn_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Earn_2.BorderSizePixel = 0
+Earn_2.Position = UDim2.new(0.509172976, 0, 0.785892904, 0)
+Earn_2.Size = UDim2.new(0, 93, 0, 36)
+Earn_2.Font = Enum.Font.FredokaOne
+Earn_2.Text = "Soon"
+Earn_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Earn_2.TextSize = 14.000
+
+Earn_3.Name = "Earn"
+Earn_3.Parent = StrengthInfo
+Earn_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Earn_3.BackgroundTransparency = 1.000
+Earn_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Earn_3.BorderSizePixel = 0
+Earn_3.Position = UDim2.new(0.759699464, 0, 0.785892904, 0)
+Earn_3.Size = UDim2.new(0, 93, 0, 36)
+Earn_3.Font = Enum.Font.FredokaOne
+Earn_3.Text = "..."
+Earn_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Earn_3.TextSize = 14.000
+
+PerSec_2.Name = "PerSec"
+PerSec_2.Parent = StrengthInfo
+PerSec_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerSec_2.BackgroundTransparency = 1.000
+PerSec_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PerSec_2.BorderSizePixel = 0
+PerSec_2.Position = UDim2.new(0.0670677423, 0, 0.161434978, 0)
+PerSec_2.Size = UDim2.new(0, 93, 0, 35)
+PerSec_2.Font = Enum.Font.FredokaOne
+PerSec_2.Text = "Gained >"
+PerSec_2.TextColor3 = Color3.fromRGB(85, 255, 0)
+PerSec_2.TextSize = 14.000
+
+Gain.Name = "Gain"
+Gain.Parent = StrengthInfo
+Gain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gain.BackgroundTransparency = 1.000
+Gain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gain.BorderSizePixel = 0
+Gain.Position = UDim2.new(0.262857229, 0, 0.180933252, 0)
+Gain.Size = UDim2.new(0, 93, 0, 26)
+Gain.Font = Enum.Font.FredokaOne
+Gain.Text = "0"
+Gain.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gain.TextSize = 14.000
+
+Lag.Name = "Lag"
+Lag.Parent = ScreenGui
+Lag.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Lag.BackgroundTransparency = 0.400
+Lag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lag.BorderSizePixel = 0
+Lag.Position = UDim2.new(0.282611966, 0, 0.277714938, 0)
+Lag.Size = UDim2.new(0, 244, 0, 253)
+Lag.Visible = false
+
+UICorner_7.Parent = Lag
+
+Anchor.Name = "Anchor"
+Anchor.Parent = Lag
+Anchor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Anchor.BackgroundTransparency = 0.450
+Anchor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Anchor.BorderSizePixel = 0
+Anchor.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Anchor.Size = UDim2.new(0, 200, 0, 33)
+Anchor.Font = Enum.Font.FredokaOne
+Anchor.Text = "Anchor"
+Anchor.TextColor3 = Color3.fromRGB(0, 0, 0)
+Anchor.TextScaled = true
+Anchor.TextSize = 14.000
+Anchor.TextWrapped = true
+
+UICorner_8.Parent = Anchor
+
+unAnchor.Name = "unAnchor"
+unAnchor.Parent = Lag
+unAnchor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+unAnchor.BackgroundTransparency = 0.450
+unAnchor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unAnchor.BorderSizePixel = 0
+unAnchor.Position = UDim2.new(0.0901639313, 0, 0, 0)
+unAnchor.Size = UDim2.new(0, 200, 0, 33)
+unAnchor.Visible = false
+unAnchor.Font = Enum.Font.FredokaOne
+unAnchor.Text = "UnAnchor"
+unAnchor.TextColor3 = Color3.fromRGB(0, 0, 0)
+unAnchor.TextScaled = true
+unAnchor.TextSize = 14.000
+unAnchor.TextWrapped = true
+
+UICorner_9.Parent = unAnchor
+
+ScrollingFrame.Parent = Lag
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.158102766, 0)
+ScrollingFrame.Size = UDim2.new(0, 244, 0, 213)
+ScrollingFrame.ScrollBarThickness = 5
+
+Camera.Name = "Camera"
+Camera.Parent = ScrollingFrame
+Camera.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Camera.BackgroundTransparency = 0.450
+Camera.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Camera.BorderSizePixel = 0
+Camera.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Camera.Size = UDim2.new(0, 200, 0, 33)
+Camera.Font = Enum.Font.FredokaOne
+Camera.Text = "Delete Camera "
+Camera.TextColor3 = Color3.fromRGB(0, 0, 0)
+Camera.TextScaled = true
+Camera.TextSize = 14.000
+Camera.TextWrapped = true
+
+UICorner_10.Parent = Camera
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+Fps.Name = "Fps"
+Fps.Parent = ScrollingFrame
+Fps.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fps.BackgroundTransparency = 0.450
+Fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fps.BorderSizePixel = 0
+Fps.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Fps.Size = UDim2.new(0, 200, 0, 33)
+Fps.Font = Enum.Font.FredokaOne
+Fps.Text = "Fps"
+Fps.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fps.TextScaled = true
+Fps.TextSize = 14.000
+Fps.TextWrapped = true
+
+UICorner_11.Parent = Fps
+
+Clouds.Name = "Clouds"
+Clouds.Parent = ScrollingFrame
+Clouds.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Clouds.BackgroundTransparency = 0.450
+Clouds.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clouds.BorderSizePixel = 0
+Clouds.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Clouds.Size = UDim2.new(0, 200, 0, 33)
+Clouds.Font = Enum.Font.FredokaOne
+Clouds.Text = "Delete Clouds"
+Clouds.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clouds.TextScaled = true
+Clouds.TextSize = 14.000
+Clouds.TextWrapped = true
+
+UICorner_12.Parent = Clouds
+
+Fog.Name = "Fog"
+Fog.Parent = ScrollingFrame
+Fog.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fog.BackgroundTransparency = 0.450
+Fog.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fog.BorderSizePixel = 0
+Fog.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Fog.Size = UDim2.new(0, 200, 0, 33)
+Fog.Font = Enum.Font.FredokaOne
+Fog.Text = "Delete Fog"
+Fog.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fog.TextScaled = true
+Fog.TextSize = 14.000
+Fog.TextWrapped = true
+
+UICorner_13.Parent = Fog
+
+Hud.Name = "Hud"
+Hud.Parent = ScrollingFrame
+Hud.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hud.BackgroundTransparency = 0.450
+Hud.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hud.BorderSizePixel = 0
+Hud.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Hud.Size = UDim2.new(0, 200, 0, 33)
+Hud.Font = Enum.Font.FredokaOne
+Hud.Text = "Delete Hud"
+Hud.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hud.TextScaled = true
+Hud.TextSize = 14.000
+Hud.TextWrapped = true
+
+UICorner_14.Parent = Hud
+
+Inventory.Name = "Inventory"
+Inventory.Parent = ScrollingFrame
+Inventory.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Inventory.BackgroundTransparency = 0.450
+Inventory.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inventory.BorderSizePixel = 0
+Inventory.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Inventory.Size = UDim2.new(0, 200, 0, 33)
+Inventory.Font = Enum.Font.FredokaOne
+Inventory.Text = "Delete Inventory"
+Inventory.TextColor3 = Color3.fromRGB(0, 0, 0)
+Inventory.TextScaled = true
+Inventory.TextSize = 14.000
+Inventory.TextWrapped = true
+
+UICorner_15.Parent = Inventory
+
+Rumble.Name = "Rumble"
+Rumble.Parent = ScrollingFrame
+Rumble.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Rumble.BackgroundTransparency = 0.450
+Rumble.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rumble.BorderSizePixel = 0
+Rumble.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Rumble.Size = UDim2.new(0, 200, 0, 33)
+Rumble.Font = Enum.Font.FredokaOne
+Rumble.Text = "Delete Rumble"
+Rumble.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rumble.TextScaled = true
+Rumble.TextSize = 14.000
+Rumble.TextWrapped = true
+
+UICorner_16.Parent = Rumble
+
+Chat.Name = "Chat"
+Chat.Parent = ScrollingFrame
+Chat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Chat.BackgroundTransparency = 0.450
+Chat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Chat.BorderSizePixel = 0
+Chat.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Chat.Size = UDim2.new(0, 200, 0, 33)
+Chat.Font = Enum.Font.FredokaOne
+Chat.Text = "Delete Chat"
+Chat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chat.TextScaled = true
+Chat.TextSize = 14.000
+Chat.TextWrapped = true
+
+UICorner_17.Parent = Chat
+
+Sps.Name = "Sps"
+Sps.Parent = ScrollingFrame
+Sps.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sps.BackgroundTransparency = 0.450
+Sps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sps.BorderSizePixel = 0
+Sps.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Sps.Size = UDim2.new(0, 200, 0, 33)
+Sps.Font = Enum.Font.FredokaOne
+Sps.Text = "Sps"
+Sps.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sps.TextScaled = true
+Sps.TextSize = 14.000
+Sps.TextWrapped = true
+
+UICorner_18.Parent = Sps
+
+Dupe.Name = "Dupe"
+Dupe.Parent = ScrollingFrame
+Dupe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.BackgroundTransparency = 0.450
+Dupe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.BorderSizePixel = 0
+Dupe.Position = UDim2.new(0.0901639313, 0, 0, 0)
+Dupe.Size = UDim2.new(0, 200, 0, 33)
+Dupe.Font = Enum.Font.FredokaOne
+Dupe.Text = "Duping Script"
+Dupe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.TextScaled = true
+Dupe.TextSize = 14.000
+Dupe.TextWrapped = true
+
+UICorner_19.Parent = Dupe
+
+Open_2.Name = "Open"
+Open_2.Parent = Lag
+Open_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open_2.BackgroundTransparency = 1.010
+Open_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open_2.BorderSizePixel = 0
+Open_2.Position = UDim2.new(0.903846145, 0, 0, 0)
+Open_2.Size = UDim2.new(0, 23, 0, 23)
+Open_2.Font = Enum.Font.SourceSans
+Open_2.Text = "O"
+Open_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open_2.TextScaled = true
+Open_2.TextSize = 14.000
+Open_2.TextStrokeColor3 = Color3.fromRGB(255, 162, 0)
+Open_2.TextStrokeTransparency = 0.000
+Open_2.TextWrapped = true
+
+-- Scripts:
+
+local function JRTJIH_fake_script() -- Tools.LocalScript 
+	local script = Instance.new('LocalScript', Tools)
+
+	
+	
+		repeat
+			wait(.1)
+			local num = 0
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == "Double Weight" then
+					num += 1
+				end
+			end
+	
+			if num == 0 then
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					if v.Name == "Double Weight" then
+						num += 1
+					end
+				end
+			end
+			Tools.Text = num..""
+		until num == 9999999999999
+end
+coroutine.wrap(JRTJIH_fake_script)()
+local function YECWDMI_fake_script() -- Equip.LocalScript 
+	local script = Instance.new('LocalScript', Equip)
+
+	Equip.MouseButton1Click:Connect(function()
+		_G.equip = true
+		while _G.equip do
+			wait(0.6)
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == Naming.Text then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(YECWDMI_fake_script)()
+local function UCKLQQ_fake_script() -- Farm.LocalScript 
+	local script = Instance.new('LocalScript', Farm)
+
+	Farm.MouseButton1Click:Connect(function()
+		_G.Auto4 = true
+		while _G.Auto4 do
+			wait(WaitTimer.Text)
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v.Name == Naming.Text then v:Activate() end
+	
+			end
+		end
+	end)
+end
+coroutine.wrap(UCKLQQ_fake_script)()
+local function PGJBDRX_fake_script() -- TS.LocalScript 
+	local script = Instance.new('LocalScript', TS)
+
+	local l = true
+	
+	while(l==true) do 
+		local player = game:GetService("Players").LocalPlayer
+		local playerName = player.Name
+		wait(0.5)
+	
+		local strength = game.ReplicatedStorage.Data[playerName].Strength.Value
+		local formattedStrength = strength
+	
+		if formattedStrength >= 1e12 then
+			formattedStrength = string.format("%.2fT", formattedStrength / 1e12)
+		elseif formattedStrength >= 1e9 then
+			formattedStrength = string.format("%.2fB", formattedStrength / 1e9)
+		elseif formattedStrength >= 1e6 then
+			formattedStrength = string.format("%.2fM", formattedStrength / 1e6)
+		elseif formattedStrength >= 1e3 then
+			formattedStrength = string.format("%.2fK", formattedStrength / 1e3)
+		end
+	
+		TS.Text = formattedStrength
+	end
+end
+coroutine.wrap(PGJBDRX_fake_script)()
+local function ZFSSD_fake_script() -- Naming.LocalScript 
+	local script = Instance.new('LocalScript', Naming)
+
+	script.Parent.PlaceholderText = "W"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WE"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WEL"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WELC"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WELCO"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WELCOM"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WELCOME"
+	wait(0.6)
+	script.Parent.PlaceholderText = "WELCOME ".. game:GetService("Players").LocalPlayer.Name.."!"
+	wait(0.6)
+	
+	script.Parent.PlaceholderText = "Tool Name Here"
+end
+coroutine.wrap(ZFSSD_fake_script)()
+local function YYVJJ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(YYVJJ_fake_script)()
+local function ABJPZC_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Parent.Lag.Visible = true
+	end)
+end
+coroutine.wrap(ABJPZC_fake_script)()
+local function OIEGU_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+	    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	    wait(1)
+	    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end
+coroutine.wrap(OIEGU_fake_script)()
+local function ZYFGXHK_fake_script() -- SPS1.LocalScript 
+	local script = Instance.new('LocalScript', SPS1)
+
+	local SuffixList = { "", "K", "M", "B", "T"}
+	local function Format(value, idp)
+	    local exp = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+	    local suffix = SuffixList[1 + exp] or ("e+" .. exp)
+	    local norm = math.floor(value * ((10 ^ idp) / (1000 ^ exp))) / (10 ^ idp)
+	
+	    return ("%." .. idp .. "f%s"):format(norm, suffix)
+	end 
+	local w=game:GetService("Players").LocalPlayer.leaderstats.Strength;local x=w.Value;local y=0;local z=0;while true do x=w.Value;wait(60)y=w.Value;z=y-x;SPS1.Text=Format(z,2) end
+end
+coroutine.wrap(ZYFGXHK_fake_script)()
+local function TQXXAK_fake_script() -- SPS2.LocalScript 
+	local script = Instance.new('LocalScript', SPS2)
+
+	local SuffixList = { "", "K", "M", "B", "T"}
+	local function Format(value, idp)
+	    local exp = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+	    local suffix = SuffixList[1 + exp] or ("e+" .. exp)
+	    local norm = math.floor(value * ((10 ^ idp) / (1000 ^ exp))) / (10 ^ idp)
+	
+	    return ("%." .. idp .. "f%s"):format(norm, suffix)
+	end 
+	local w=game:GetService("Players").LocalPlayer.leaderstats.Strength;local x=w.Value;local y=0;local z=0;while true do x=w.Value;wait(3600)y=w.Value;z=y-x;SPS2.Text=Format(z,2) end
+end
+coroutine.wrap(TQXXAK_fake_script)()
+local function WKIGJ_fake_script() -- SPS3.LocalScript 
+	local script = Instance.new('LocalScript', SPS3)
+
+	local SuffixList = { "", "K", "M", "B", "T"}
+	local function Format(value, idp)
+	    local exp = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+	    local suffix = SuffixList[1 + exp] or ("e+" .. exp)
+	    local norm = math.floor(value * ((10 ^ idp) / (1000 ^ exp))) / (10 ^ idp)
+	
+	    return ("%." .. idp .. "f%s"):format(norm, suffix)
+	end 
+	local w=game:GetService("Players").LocalPlayer.leaderstats.Strength;local x=w.Value;local y=0;local z=0;while true do x=w.Value;wait(86400)y=w.Value;z=y-x;SPS3.Text=Format(z,2) end
+end
+coroutine.wrap(WKIGJ_fake_script)()
+local function BFTGWRH_fake_script() -- SPS4.LocalScript 
+	local script = Instance.new('LocalScript', SPS4)
+
+	local SuffixList = { "", "K", "M", "B", "T"}
+	local function Format(value, idp)
+	    local exp = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+	    local suffix = SuffixList[1 + exp] or ("e+" .. exp)
+	    local norm = math.floor(value * ((10 ^ idp) / (1000 ^ exp))) / (10 ^ idp)
+	
+	    return ("%." .. idp .. "f%s"):format(norm, suffix)
+	end
+	local w=game:GetService("Players").LocalPlayer.leaderstats.Strength;local x=w.Value;local y=0;local z=0;while true do x=w.Value;wait(1)y=w.Value;z=y-x;SPS1.Text=z;SPS2.Text=z*60;SPS3.Text=z*3600;SPS4.Text=z*86400 end
+end
+coroutine.wrap(BFTGWRH_fake_script)()
+local function BMWM_fake_script() -- Gain.LocalScript 
+	local script = Instance.new('LocalScript', Gain)
+
+	local SuffixList = { "", "K", "M", "B", "T"}
+	local function Format(value, idp)
+	    local exp = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+	    local suffix = SuffixList[1 + exp] or ("e+" .. exp)
+	    local norm = math.floor(value * ((10 ^ idp) / (1000 ^ exp))) / (10 ^ idp)
+	
+	    return ("%." .. idp .. "f%s"):format(norm, suffix)
+	end 
+	local plr = game.Players.LocalPlayer
+	while wait() do
+	    script.Parent.Text = ""..plr:WaitForChild("leaderstats"):FindFirstChild("Strength").Value
+	end
+end
+coroutine.wrap(BMWM_fake_script)()
+local function MMSTEJ_fake_script() -- StrengthInfo.LocalScript 
+	local script = Instance.new('LocalScript', StrengthInfo)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(MMSTEJ_fake_script)()
+local function PCOVF_fake_script() -- Anchor.LocalScript 
+	local script = Instance.new('LocalScript', Anchor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    script.Parent.Visible = false
+	    script.Parent.Parent.unAnchor.Visible = true
+	    for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+	        if v:IsA('Part') then v.Anchored = true
+	        end
+	    end
+	end)
+end
+coroutine.wrap(PCOVF_fake_script)()
+local function YSXVJ_fake_script() -- unAnchor.LocalScript 
+	local script = Instance.new('LocalScript', unAnchor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    script.Parent.Visible = false
+	    script.Parent.Parent.Anchor.Visible = true
+	    for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+	        if v:IsA('Part') then v.Anchored = true
+	        end
+	    end
+	end)
+end
+coroutine.wrap(YSXVJ_fake_script)()
+local function SAHILOK_fake_script() -- Camera.LocalScript 
+	local script = Instance.new('LocalScript', Camera)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game:GetService("Workspace").Camera:Destroy()
+	end)
+end
+coroutine.wrap(SAHILOK_fake_script)()
+local function EAQAX_fake_script() -- Fps.LocalScript 
+	local script = Instance.new('LocalScript', Fps)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/mmEr60d5", true))()
+	end)
+end
+coroutine.wrap(EAQAX_fake_script)()
+local function DZWDQTX_fake_script() -- Clouds.LocalScript 
+	local script = Instance.new('LocalScript', Clouds)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game:GetService("Workspace").Clouds:Destroy()
+	end)
+end
+coroutine.wrap(DZWDQTX_fake_script)()
+local function KECM_fake_script() -- Fog.LocalScript 
+	local script = Instance.new('LocalScript', Fog)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game:GetService("Lighting").NormalSky:Destroy()
+	end)
+end
+coroutine.wrap(KECM_fake_script)()
+local function WZYG_fake_script() -- Hud.LocalScript 
+	local script = Instance.new('LocalScript', Hud)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game:GetService("Players").LocalPlayer.PlayerGui.HUD:Destroy()
+	end)
+end
+coroutine.wrap(WZYG_fake_script)()
+local function UYISX_fake_script() -- Inventory.LocalScript 
+	local script = Instance.new('LocalScript', Inventory)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/8W1draqT", true))()
+	end)
+end
+coroutine.wrap(UYISX_fake_script)()
+local function DGGMFAC_fake_script() -- Rumble.LocalScript 
+	local script = Instance.new('LocalScript', Rumble)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game.ReplicatedFirst.TourneyQ:Destroy()
+	end)
+end
+coroutine.wrap(DGGMFAC_fake_script)()
+local function BLGBYO_fake_script() -- Chat.LocalScript 
+	local script = Instance.new('LocalScript', Chat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game:GetService("Players").LocalPlayer.PlayerGui.Chat:Destroy()
+	end)
+end
+coroutine.wrap(BLGBYO_fake_script)()
+local function IJED_fake_script() -- Sps.LocalScript 
+	local script = Instance.new('LocalScript', Sps)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    script.Parent.Parent.Parent.Parent.StrengthInfo.Visible = true
+	end)
+end
+coroutine.wrap(IJED_fake_script)()
+local function IHAUJBI_fake_script() -- Dupe.LocalScript 
+	local script = Instance.new('LocalScript', Dupe)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'),true))()
+	end)
+end
+coroutine.wrap(IHAUJBI_fake_script)()
+local function QKLR_fake_script() -- Open_2.LocalScript 
+	local script = Instance.new('LocalScript', Open_2)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(QKLR_fake_script)()
